@@ -76,7 +76,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
             try:
                 salary_estimate = driver.find_element_by_xpath(
-                    './/span[@class="gray salary"]').text
+                    './/span[@class="css-1uyte9r css-hca4ks e1wijj242"]').text
             except NoSuchElementException:
                 salary_estimate = -1  # You need to set a "not found value. It's important."
 
@@ -100,7 +100,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
             # <div class="tab" data-tab-type="overview"><span>Company</span></div>
             try:
                 driver.find_element_by_xpath(
-                    './/div[@class="tab" and @data-tab-type="overview"]').click()
+                    './/div[@class="tab"][1]/span').click()
 
                 try:
                     # <div class="infoEntity">
