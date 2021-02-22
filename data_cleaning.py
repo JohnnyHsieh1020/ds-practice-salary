@@ -5,10 +5,7 @@ df = pd.read_csv('glassdoor_jobs.csv')
 
 # Salary Estimate: keep the numbers only.
 df['hourly'] = df['Salary Estimate'].apply(
-    lambda x: 1 if 'per hour' in x.lower() else 0)  # 增加一個欄位來註記欄位「Salary Estimate」中有 "Per hour" 的紀錄
-
-df['employer_provided'] = df['Salary Estimate'].apply(
-    lambda x: 1 if 'employer provided salary:' in x.lower() else 0)
+    lambda x: 1 if 'per hour' in x.lower() else 0)  # 增加一個欄位來註記欄位「Salary Estimate」中有 "Per hour" 的資料
 
 df = df[df['Salary Estimate'] != '-1']  # 移除欄位「Salary Estimate」中，值為 -1
 
@@ -43,4 +40,24 @@ print(df.job_location.value_counts())  # 統計 location 個數
 # Founded: age of company.
 df['age'] = df.Founded.apply(lambda x: x if x < 1 else 2021 - x)  # 計算企業年齡
 
-# Job Description: python etc.
+# Job Description: Excel, R, Tableau, SQL and Python, TensorFlow etc.
+df['req_python'] = df['Job Description'].apply(lambda x: 1 if 'python' in x.lower() else 0)
+df.req_python.value_counts()
+
+df['req_excel']= df['Job Description'].apply(lambda x: 1 if 'excel' in x.lower() else 0)
+df.req_excel.value_counts()
+
+df['req_R']= df['Job Description'].apply(lambda x: 1 if 'r studio' in x.lower() or 'r-studio' in x.lower() else 0)
+df.req_R.value_counts()
+
+df['req_tableau'] = df['Job Description'].apply(lambda x: 1 if 'tableau' in x.lower() else 0)
+df.req_tableau.value_counts()
+
+df['req_sql'] = df['Job Description'].apply(lambda x: 1 if 'sql' in x.lower() else 0)
+df.req_sql.value_counts()
+
+df['req_tensorflow'] = df['Job Description'].apply(lambda x: 1 if 'tensorflow' in x.lower() else 0)
+df.req_tensorflow.value_counts()
+
+# export to CSV
+df.to_csv('salary_data_cleaned.csv', index = False)
