@@ -1,11 +1,14 @@
 # ds-practice-salary
 
 ## Code and Resources Used 
-**Python Version:** Python 3.7.4  
+**Python Version :** Python 3.7.4  
+**IDE :** Spyder  
 
 **Github :**
 1. https://github.com/arapfaik/scraping-glassdoor-selenium
 2. https://github.com/PlayingNumbers/ds_salary_proj
+
+**Packages :** pandas, selenium
 
 **Reference :** 
 1. https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
