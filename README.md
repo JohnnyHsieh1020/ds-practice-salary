@@ -10,6 +10,12 @@
 
 **Packages :** pandas, selenium
 
+**Reference documents or videos :** 
+1. https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
+2. https://towardsdatascience.com/how-to-identify-the-most-requested-skills-on-the-data-science-job-market-with-data-science-726845ca9638
+3. https://towardsdatascience.com/top-10-skills-for-a-data-scientist-in-2020-2b8e6122a742  
+4. https://365datascience.com/career-advice/career-guides/5-skills-data-science-job/  
+
 ## Data Collection 
 Collect 500 job postings from glassdoor.com. With each job, we got the following:
 *	Job Title
@@ -43,8 +49,4 @@ Clean the data up so that it was usable for our model. I made the following chan
     * SQL  
     * TensorFlow  
 
-**Reference documents or videos :** 
-1. https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
-2. https://towardsdatascience.com/how-to-identify-the-most-requested-skills-on-the-data-science-job-market-with-data-science-726845ca9638
-3. https://towardsdatascience.com/top-10-skills-for-a-data-scientist-in-2020-2b8e6122a742  
-4. https://365datascience.com/career-advice/career-guides/5-skills-data-science-job/  
+
