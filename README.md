@@ -52,4 +52,14 @@ Clean the data up so that it was usable for our model. I made the following chan
 ## Exploratory Data Analysis (EDA)
 Below are a few tables and graphs I made. Try to find out the connections and relations in this dataset. 
 
+**Correlations :**      
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/Correlations.png)
 
+**Job by location :**      
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/job_by_location.png)
+
+**Salary by job position :**      
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/salary_by_job_position.png)
+
+**DS salary by location :**      
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/ds_salary_by_location.png)
