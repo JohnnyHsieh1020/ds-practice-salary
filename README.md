@@ -49,4 +49,7 @@ Clean the data up so that it was usable for our model. I made the following chan
     * SQL  
     * TensorFlow  
 
+## Exploratory Data Analysis (EDA)
+Below are a few tables and graphs I made. Try to find out the connections and relations in this dataset. 
+
 
