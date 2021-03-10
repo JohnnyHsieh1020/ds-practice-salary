@@ -37,17 +37,18 @@ Collect 500 job postings from glassdoor.com. With each job, we got the following
 Clean the data up so that it was usable for our model. I made the following changes and created the following variables:
 *	Parsed numeric data out of "Salary Estimate" 
 *	Made columns for hourly wages 
-*	Removed rows without salary 
+*	Removed rows without salary and remove rows with "Remote", "United States" in Location column
 *	Parsed rating out of company text 
-*	Made a new column for company state 
+*	Made a new column for company's location 
 *	Calculate the age of company 
 *	Made columns for if different skills were listed in the job description:
     * Python  
     * Excel  
-    * R  
+    * Git  
     * Tableau  
     * SQL  
     * TensorFlow  
+    * Power BI  
 
 ## Exploratory Data Analysis (EDA)
 Below are a few tables and graphs I made. Try to find out the connections and relations in this dataset. 
