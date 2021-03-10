@@ -2,7 +2,8 @@ import pandas as pd
 
 df = pd.read_csv('glassdoor_jobs.csv')
 # print(df)  # 預設顯示前5筆資料
-
+df = df.drop('Headquarters', axis = 1)
+df = df.drop('Competitors', axis = 1)
 # Salary Estimate: keep the numbers only.
 df['hourly'] = df['Salary Estimate'].apply(
     lambda x: 1 if 'per hour' in x.lower() else 0)  # 增加一個欄位來註記欄位「Salary Estimate」中有 "Per hour" 的資料
@@ -28,9 +29,6 @@ df['Company'] = df.apply(lambda x: x['Company Name']
 # Location: keep state.
 df = df[df['Location'] != 'Remote']
 df = df[df['Location'] != 'United States']
-df = df[df['Location'] != 'Maryland']
-df = df[df['Location'] != 'New Jersey']
-df = df[df['Location'] != 'Virginia']
 
 df['job_location'] = df['Location'].apply(
     lambda x: x.split(',')[1])  # 取欄位「Location」中後兩個字元
@@ -40,15 +38,15 @@ print(df.job_location.value_counts())  # 統計 location 個數
 # Founded: age of company.
 df['age'] = df.Founded.apply(lambda x: x if x < 1 else 2021 - x)  # 計算企業年齡
 
-# Job Description: Excel, R, Tableau, SQL and Python, TensorFlow etc.
+# Job Description: Excel, Git, Tableau, SQL and Python, TensorFlow, Power Bi etc.
 df['req_python'] = df['Job Description'].apply(lambda x: 1 if 'python' in x.lower() else 0)
 df.req_python.value_counts()
 
 df['req_excel']= df['Job Description'].apply(lambda x: 1 if 'excel' in x.lower() else 0)
 df.req_excel.value_counts()
 
-df['req_R']= df['Job Description'].apply(lambda x: 1 if 'r studio' in x.lower() or 'r-studio' in x.lower() else 0)
-df.req_R.value_counts()
+df['req_git']= df['Job Description'].apply(lambda x: 1 if 'git' in x.lower() or 'github' in x.lower() else 0)
+df.req_git.value_counts()
 
 df['req_tableau'] = df['Job Description'].apply(lambda x: 1 if 'tableau' in x.lower() else 0)
 df.req_tableau.value_counts()
@@ -58,6 +56,9 @@ df.req_sql.value_counts()
 
 df['req_tensorflow'] = df['Job Description'].apply(lambda x: 1 if 'tensorflow' in x.lower() else 0)
 df.req_tensorflow.value_counts()
+
+df['req_powerbi'] = df['Job Description'].apply(lambda x: 1 if 'powerbi' in x.lower() else 0)
+df.req_powerbi.value_counts()
 
 # export to CSV
 df.to_csv('salary_data_cleaned.csv', index = False)
