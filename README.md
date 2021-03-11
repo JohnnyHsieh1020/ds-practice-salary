@@ -67,5 +67,5 @@ Below are a few tables and graphs I made. Try to find out the connections and re
 **DS salary by location :**      
 ![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/ds_salary_by_location.png)
 
-**Word Cloud :** 
+**Word Cloud :**  
 <img src="https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/wordcloud.png" width="200">
