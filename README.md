@@ -1,14 +1,16 @@
-# ds-practice-salary
+# DS_salary_estimate_project   
+*  By estimating data science salaries to help data scientist know how much income does this position give.
+*  Collected 500 job descriptions from glassdoor using python and selenium.
 
 ## Code and Resources Used 
 **Python Version :** Python 3.7.4  
-**IDE :** Spyder  
+**IDE :** Spyder, Jupyter Notebook
 
 **Github :**
 1. https://github.com/arapfaik/scraping-glassdoor-selenium
 2. https://github.com/PlayingNumbers/ds_salary_proj
 
-**Packages :** pandas, selenium
+**Packages :** pandas, numpy, sklearn, matplotlib, seaborn, dataframe_image, selenium
 
 **Reference documents or videos :** 
 1. https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
@@ -64,3 +66,6 @@ Below are a few tables and graphs I made. Try to find out the connections and re
 
 **DS salary by location :**      
 ![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/ds_salary_by_location.png)
+
+**Word Cloud :**      
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/wordcloud.png)
