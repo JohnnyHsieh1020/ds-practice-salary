@@ -58,19 +58,19 @@ Clean the data up so that it was usable for our model. I made the following chan
 Below are a few tables and graphs I made. Try to find out the connections and relations in this dataset. 
 
 **Correlations :**      
-![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/Correlations.png)
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/image/Correlations.png)
 
 **Job by location :**      
-![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/job_by_location.png)
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/image/job_by_location.png)
 
 **Salary by job position :**      
-![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/salary_by_job_postion.png)
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/image/salary_by_job_postion.png)
 
 **DS salary by location :**      
-![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/ds_salary_by_location.png)
+![image](https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/image/ds_salary_by_location.png)
 
 **Word Cloud :**  
-<img src="https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/wordcloud.png" width="200">
+<img src="https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/image/wordcloud.png" width="200">
 
 ## Model Building
 1. By using LabelEncoder. It can transform data into a value between 0 and n_classes-1.
