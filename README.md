@@ -17,6 +17,8 @@
 2. https://towardsdatascience.com/how-to-identify-the-most-requested-skills-on-the-data-science-job-market-with-data-science-726845ca9638
 3. https://towardsdatascience.com/top-10-skills-for-a-data-scientist-in-2020-2b8e6122a742  
 4. https://365datascience.com/career-advice/career-guides/5-skills-data-science-job/  
+5. https://medium.com/analytics-vidhya/python-exploratory-data-analysis-eda-on-nyc-airbnb-cbeabd622e30  
+6. https://medium.com/@PatHuang/%E5%88%9D%E5%AD%B8python%E6%89%8B%E8%A8%98-3-%E8%B3%87%E6%96%99%E5%89%8D%E8%99%95%E7%90%86-label-encoding-one-hot-encoding-85c983d63f87  
 
 ## Data Collection 
 Collect 500 job postings from glassdoor.com. With each job, we got the following:
@@ -69,3 +71,17 @@ Below are a few tables and graphs I made. Try to find out the connections and re
 
 **Word Cloud :**  
 <img src="https://github.com/JohnnyHsieh1020/ds-practice-salary/blob/main/wordcloud.png" width="200">
+
+## Model Building
+1. By using LabelEncoder. It can transform data into a value between 0 and n_classes-1.
+2. I split the data in a 80–20 ratio.
+3. I used three different models and evaluated them using Mean Absolute Error(MAE).
+    * Linear Regression  
+    * Lasso Regression  
+    * Random Forest
+    
+## Model performance
+The Lasso Regression model has the best performance.   
+*	Linear Regression: MAE = 27.03  
+*	Lasso Regression: MAE = 26.11
+*	Random Forest : MAE = 31.48
