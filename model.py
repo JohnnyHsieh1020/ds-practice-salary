@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 from sklearn import preprocessing
 
-df = pd.read_csv('eda_data.csv')
+df = pd.read_csv('dataset/eda_data.csv')
 df = df.drop(columns=['Unnamed: 0', 'Job Title', 'Salary Estimate', 'Job Description',
                       'Company Name', 'Location', 'Founded', 'min_salary', 'max_salary', 'Company'], axis = 1)
 df.columns
